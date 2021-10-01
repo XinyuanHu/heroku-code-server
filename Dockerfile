@@ -25,11 +25,9 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
 RUN code-server --install-extension esbenp.prettier-vscode
-RUN code-server --install-extension ms-vscode-remote.remote-containers
 RUN code-server --install-extension coenraads.bracket-pair-colorizer
 RUN code-server --install-extension ms-azuretools.vscode-docker
 RUN code-server --install-extension eamodio.gitlens
-RUN code-server --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 RUN code-server --install-extension pkief.material-icon-theme
 RUN code-server --install-extension christian-kohler.path-intellisense
 RUN code-server --install-extension ms-python.python
