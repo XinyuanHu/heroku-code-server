@@ -20,6 +20,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: willhu843/heroku-code-server:tagname:latest
+          tags: willhu843/heroku-code-server:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
